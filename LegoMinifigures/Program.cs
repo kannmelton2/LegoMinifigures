@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegoMinifigures.Minifigures;
+using System;
 
 namespace LegoMinifigures
 {
@@ -6,7 +7,15 @@ namespace LegoMinifigures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var eugene = new Human("Eugene", "Brown")
+            {
+                Hat = HatChoice.Crown
+            };
+
+            eugene.GetDressed();
+
+            eugene.Fight();
+            
         }
     }
 }
