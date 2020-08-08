@@ -7,6 +7,7 @@ namespace LegoMinifigures
     {
         static void Main(string[] args)
         {
+            // Human
             var eugene = new Human("Eugene", "Brown")
             {
                 Hat = HatChoice.Crown
@@ -15,7 +16,18 @@ namespace LegoMinifigures
             eugene.GetDressed();
 
             eugene.Fight();
-            
+
+            // Animal
+            var pascal = new Animal("Pascal");
+
+            pascal.WhatSpecies();
+
+            pascal.Color = "Green";
+            pascal.Companion = eugene;
+
+            pascal.PlayTime();
+
+
         }
     }
 }

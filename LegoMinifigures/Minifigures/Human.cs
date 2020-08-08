@@ -11,6 +11,7 @@ namespace LegoMinifigures.Minifigures
         public HatChoice Hat { get; set; }
         public string Name { get; set; }
         public string Clothing { get; set; }
+        public bool ReadyToPlay { get; set; }
         
 
         // constructor
@@ -36,6 +37,7 @@ namespace LegoMinifigures.Minifigures
             if (answer == "yes")
             {
                 Console.WriteLine($"{Name} fought off the attacker, but they got away!");
+                ReadyToPlay = false;
             }
             else
             {
